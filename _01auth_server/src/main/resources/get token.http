@@ -1,0 +1,4 @@
+POST http://localhost:9000/oauth2/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code& code=rzaqZ4odtQsq2L62YFpQQuAdLaexE-walZdTiGy12cRFZH6WQCqE7CHK_7AIPNUaY6Yti_5pvWMs_J46v9FTT403I3iEEnXkTcQhZRbZzgzWjYUQvsDf4ROzqTKIyc4r& client_id=discountclientapp& client_secret=9999& redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug

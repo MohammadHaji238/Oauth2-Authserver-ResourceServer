@@ -1,0 +1,36 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: discount
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: "true"
+  datasource:
+    url: jdbc:mysql://localhost:3306/springsecurity
+    username: root
+    password: 1234
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://127.0.0.1:9000/oauth2/jwks
+#          issuer-uri: http://auth-server:9000
+#          jwk-set-uri: http://127.0.0.1:9000/oauth2/jwks
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: INFO
+
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
